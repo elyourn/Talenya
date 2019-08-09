@@ -6,7 +6,7 @@ import styles from './index.scss';
 const Label = ({ text }) => <div className={styles.label}>{text}</div>;
 
 Label.propTypes = {
-    text: PropTypes.string.isRequired,
+	text: PropTypes.string.isRequired,
 };
 
 export default Label;

@@ -10,14 +10,14 @@ import { youtubeSearchByKeyword } from './youtube';
  * @return {Object}
  * */
 export const searchByKeyword = (type, keyword) => {
-    switch (type) {
-        case TYPES.YOUTUBE: {
-            return youtubeSearchByKeyword(keyword);
-        }
-        default: {
-            console.info(`searchByKeyword: undelegated type ${type}`);
-        }
-    }
+	switch (type) {
+		case TYPES.YOUTUBE: {
+			return youtubeSearchByKeyword(keyword);
+		}
+		default: {
+			console.info(`searchByKeyword: undelegated type ${type}`);
+		}
+	}
 
-    return false;
+	return false;
 };
