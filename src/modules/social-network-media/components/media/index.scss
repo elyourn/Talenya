@@ -1,0 +1,17 @@
+.media {
+    padding: 12px 0;
+
+    iframe {
+        width: 320px;
+        height: 180px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 12px;
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+    }
+}
