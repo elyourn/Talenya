@@ -6,9 +6,9 @@ import { getYouTubeIdFromLink } from './utils';
  * @return {Boolean}
  * */
 export const isYouTubeValidLink = (str) => {
-	const regEx = /^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/.+/;
+    const regEx = /^(http(s)?:\/\/)?((w){3}.)?youtu(be|.be)?(\.com)?\/.+/;
 
-	return regEx.test(str);
+    return regEx.test(str);
 };
 
 /**
@@ -17,4 +17,4 @@ export const isYouTubeValidLink = (str) => {
  * @return {String}
  * */
 export const transformYouTubeLinkToEmbed = (link) =>
-	getYouTubeEmbededVideoUrl(getYouTubeIdFromLink(link));
+    getYouTubeEmbededVideoUrl(getYouTubeIdFromLink(link));

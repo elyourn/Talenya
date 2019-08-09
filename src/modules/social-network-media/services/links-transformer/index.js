@@ -9,16 +9,16 @@ import { isYouTubeValidLink, transformYouTubeLinkToEmbed } from './youtube';
  * @return {Boolean}
  * */
 export const isValidLink = (type, str) => {
-	switch (type) {
-		case TYPES.YOUTUBE: {
-			return isYouTubeValidLink(str);
-		}
-		default: {
-			console.info(`isValidLink: undelegated type ${type}`);
-		}
-	}
+    switch (type) {
+        case TYPES.YOUTUBE: {
+            return isYouTubeValidLink(str);
+        }
+        default: {
+            console.info(`isValidLink: undelegated type ${type}`);
+        }
+    }
 
-	return false;
+    return false;
 };
 
 /**
@@ -30,15 +30,15 @@ export const isValidLink = (type, str) => {
  * @return {String} - embeded link
  * */
 export const transformLinkToEmbed = (type, str) => {
-	switch (type) {
-		case TYPES.YOUTUBE: {
-			return transformYouTubeLinkToEmbed(str);
-		}
-		default: {
-			console.info(`transformLinkToEmbed: undelegated type ${type}`);
-		}
-	}
-	return false;
+    switch (type) {
+        case TYPES.YOUTUBE: {
+            return transformYouTubeLinkToEmbed(str);
+        }
+        default: {
+            console.info(`transformLinkToEmbed: undelegated type ${type}`);
+        }
+    }
+    return false;
 };
 
 export default isValidLink;

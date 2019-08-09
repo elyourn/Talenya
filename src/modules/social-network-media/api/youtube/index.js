@@ -8,6 +8,6 @@ import { getYouTubeSearchAPIUrl, normalizeYoutubeData } from './utils';
  * */
 
 export const youtubeSearchByKeyword = async (keyword) => {
-	const { data } = await get(getYouTubeSearchAPIUrl(keyword));
-	return normalizeYoutubeData(data);
+    const { data } = await get(getYouTubeSearchAPIUrl(keyword));
+    return normalizeYoutubeData(data);
 };

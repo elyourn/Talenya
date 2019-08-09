@@ -1,3 +1,3 @@
 export const TYPES = {
-	YOUTUBE: 'youtube',
+    YOUTUBE: 'youtube',
 };
