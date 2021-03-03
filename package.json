@@ -42,7 +42,7 @@
         "postcss-loader": "^2.1.5",
         "prettier": "1.11.1",
         "pretty-quick": "^1.4.1",
-        "pug": "^2.0.3",
+        "pug": "^3.0.1",
         "pug-loader": "^2.4.0",
         "react-test-renderer": "^16.9.0",
         "resolve-url-loader": "^2.3.0",
